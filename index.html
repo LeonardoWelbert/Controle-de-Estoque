@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Hub - Gestão de Estoque</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="/home/leonardo/Documentos/Projeto da padaria/Estoque - Padaria/style/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>
+        <i class="fas fa-bread-slice" style="color: #f59e0b;"></i>
+        Padaria Hub
+    </h2>
+
+    <form id="formEstoque" class="input-group">
+        <input type="text" id="nome" placeholder="Produto (ex: Trigo)" required>
+
+        <div class="grid">
+            <input type="number" id="quantidade" placeholder="Qtd Atual" required>
+            <input type="number" id="minimo" placeholder="Mínimo" required>
+        </div>
+
+        <button type="submit" class="btn-add">
+            Adicionar ao Estoque
+        </button>
+    </form>
+
+    <div id="listaEstoque"></div>
+</div>
+
+<!-- JS externo -->
+<script src="/home/leonardo/Documentos/Projeto da padaria/Estoque - Padaria/script/script.js"></script>
+
+</body>
+</html>
